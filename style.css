@@ -1,0 +1,274 @@
+@font-face {
+    font-family: cenotaph;
+    src: url(./Cenotaph-Titling.otf);
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#title{
+    padding: 120px 30px 180px 30px;
+    text-align: center;
+    color: #999;
+    font-family: cenotaph;
+    font-size: 80px;
+}
+
+.sub-title{
+    font-size: 17px;
+}
+
+h2{
+    width: 1000px;
+    font-family: cenotaph;
+    margin: 0 auto;  
+    padding-top: 15px; 
+}
+.sub-txt{
+    margin: 0 auto;   
+    width: 1000px;
+    font-family: 'Pretendard-Regular';
+    font-size: 17px; 
+}
+.intro{
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+}
+.column{
+    
+    width: 1px;
+    height: 200px;
+    background-color: #999;
+    margin: 25px auto 25px;
+    
+}
+
+#main{
+    width: 1200px;
+    margin: 0 auto;   
+}
+.painting, .painting2{
+    text-align: center;
+    width: 1000px;
+    margin: 10px auto;
+    font-family: cenotaph;
+    font-size: 20px;
+}
+.painting2{
+    font-size: 15px;
+    font-family: 'Pretendard-Regular';
+    padding-bottom: 40px;
+}
+#pic1{
+    margin: 0 auto;
+    width: 1000px;
+    height: 800px;
+    background: url(https://i.postimg.cc/nLNScBxm/sea.jpg) center no-repeat;
+    background-size:cover;
+    background-position-y: 0px;
+}
+.water{
+    padding: 240px 0;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+ 
+}
+.water-2>div:nth-child(1), .wall-2>div:nth-child(2){
+    width: 400px;
+    height: 190px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.wall-2>div:nth-child(2){
+    margin-top: 20px;
+}
+.water-2>div:nth-child(2), .wall-2>div:nth-child(1){
+    width: 300px;
+    height: 240px;
+    margin-left: 100px;
+    overflow: hidden;
+}
+
+
+.water-2>div>img, .wall-2>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.water-3{
+    margin-left: 30px;
+    width: 270px;
+    height: 400px;
+    overflow: hidden;
+}
+.water-3>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ballet-2{
+    width: 570px;
+    height: 380px;
+    display: flex;
+}
+.ballet-2>div>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.ballet-2>div:nth-child(1){
+    width: 200px;
+    height: 300px;
+    margin-top: 80px;
+    margin-right: 30px;
+}
+.ballet-3{
+    margin-top: 30px;
+    width: 480px;
+    height: 300px;
+   
+}
+.ballet-3>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -100px ;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.explain{
+    font-family: 'Pretendard-Regular';
+    padding-left: 100px;
+    width: 500px;
+}
+.explain2{
+    width: 500px;
+    padding-right: 100px;
+}
+.explain>div:nth-child(1), .explain2>div:nth-child(1){
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-family: 'Pretendard-Regular';
+}
+.explain2>div{
+    font-family: 'Pretendard-Regular';
+    text-align: right;
+}
+@keyframes fadeout {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+        0% {
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+.box{
+  width:100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center; 
+}
+.box {
+   background: url(img/woman.jpeg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.box:nth-child(1) {
+  filter: blur(8px);
+}
+
+.box:nth-child(2) {
+    clip-path: circle(150px at var(--x) var(--y));  /*보여줄 크기 at 원 중앙 지점*/
+}
+
+.circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 5px 23px rgba(0,0,0,0.5);
+  top: -150px;
+  left: -150px;
+  transform: translate(var(--x),var(--y));
+}
+
+#pic3{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#canv{
+ 
+    width: 1000px;
+    background-size: cover;
+    background-image: url(img/snow.jpeg);
+    background-repeat: no-repeat;
+}
+
+#pic4{ 
+    margin: 0 auto;
+    width: 1000px;
+    height: 800px;
+    background-image: url(https://www.renemagritte.org/assets/img/paintings/the-lovers-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#box{
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    position: absolute;
+    background-image: url(https://www.renemagritte.org/assets/img/paintings/son-of-man.jpg);
+    background-size: cover;
+
+}
+#footer{
+    background-color: #999;
+    text-align: center;
+    padding: 20px 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    color: #333;
+
+}
+#footer>a{
+    text-decoration: none;
+    font-family: cenotaph;
+    flex-grow: 1;
+  
+    color: #eee;
+}
+#footer>a:hover{
+    color: #333;
+}
